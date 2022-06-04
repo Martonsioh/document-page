@@ -11,7 +11,7 @@
 <body id="main-doc">
     <main>
         <!--Header-->
-        <section class="main-section">
+        <section class="header-section">
             <header>
                 <div class="wrapper">
                 <nav id="navbar">
@@ -19,8 +19,8 @@
                         <h2>Python <i class="fa-brands fa-python"></i></h2>
                         <ul>
                             <li><a href="#" class="nav-link">Introducción</a></li>
-                            <li><a href="#" class="nav-link">Porqué Python</a></li>
-                            <li><a href="#" class="nav-link">Versiones</a></li>
+                            <li><a href="#" class="nav-link">Características</a></li>
+                            <li><a href="#" class="nav-link">Elementos</a></li>
                             <li><a href="#" class="nav-link">¡Hola Mundo!</a></li>
                             <li><a href="#" class="nav-link">Variables</a></li>
                             <li><a href="#" class="nav-link">Declarar Variables</a></li>
@@ -33,11 +33,108 @@
             </header>
         </section>
 
+        <!--Introducción-->
         <section class="main-section">
             <div class="title-info"><h1>Introducción</h1></div>
             <div class="info">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus corrupti iusto doloremque fugit eveniet veritatis eius non aut itaque, et consequuntur nobis deserunt soluta incidunt, modi quae sit! Non est iure, eligendi velit iste enim expedita optio tenetur aut pariatur!
+                Python es un lenguaje de alto nivel de programación interpretado cuya filosofía hace hincapié en la legibilidad de su código, se utiliza para desarrollar aplicaciones de todo tipo, ejemplos: Instagram, Netflix, Spotify, Panda 3D, entre otros. Se trata de un lenguaje de programación multiparadigma, ya que soporta parcialmente la orientación a objetos, programación imperativa y, en menor medida, programación funcional. Es un lenguaje interpretado, dinámico y multiplataforma.
             </div>
+            <div class="info">Administrado por Python Software Foundation, posee una licencia de código abierto, denominada Python Software Foundation License. Python se clasifica constantemente como uno de los lenguajes de programación más populares.</div>
+
+            <div class="info">Python fue creado a finales de los años ochenta por Guido van Rossum en el Centro para las Matemáticas y la Informática (CWI, Centrum Wiskunde & Informatica), en los Países Bajos, como un sucesor del lenguaje de programación ABC, capaz de manejar excepciones e interactuar con el sistema operativo Amoeba.
+            El nombre del lenguaje proviene de la afición de sucreador por los humoristas británicos Monty Python.
+            </div>
+        </section>
+
+        <!--Porqué Python-->
+        <section class="main-section">
+            <div class="title-info"><h1>Características</h1></div>
+            <div class="info">Python es un lenguaje de programación multiparadigma. Esto significa que más que forzar a los programadores a adoptar un estilo particular de programación, permite varios estilos: programación orientada a objetos, programación imperativa y programación funcional. Otros paradigmas están soportados mediante el uso de extensiones.</div>
+            <div class="info">Python usa tipado dinámico y conteo de referencias para la gestión de memoria.</div>
+            <div class="info">Una característica importante de Python es la resolución dinámica de nombres; es decir, lo que enlaza un método y un nombre de variable durante la ejecución del programa (también llamado enlace dinámico de métodos).</div>
+            <div class="info">Otro objetivo del diseño del lenguaje es la facilidad de extensión. Se pueden escribir nuevos módulos fácilmente en C o C++. Python puede incluirse en aplicaciones que necesitan una interfaz programable.</div>
+            <div class="info">Aunque la programación en Python podría considerarse en algunas situaciones hostil a la programación funcional tradicional del Lisp, existen bastantes analogías entre Python y los lenguajes minimalistas de la familia Lisp como puede ser Scheme.</div>
+        </section>
+
+        <!--Elementos-->
+        <section class="main-section">
+            <div class="title-info"><h1>Elementos</h1></div>
+            <div class="info">Python está destinado a ser un lenguaje de fácil lectura. Su formato es visualmente ordenado y, a menudo, usa palabras clave en inglés donde otros idiomas usan puntuación. A diferencia de muchos otros lenguajes, no utiliza corchetes para delimitar bloques y se permiten puntos y coma después de las declaraciones, pero rara vez, si es que alguna vez, se utilizan. Tiene menos excepciones sintácticas y casos especiales que C o Pascal.</div>
+            <div class="info">Diseñado para ser leído con facilidad, una de sus características es el uso de palabras donde otros lenguajes utilizarían símbolos. Por ejemplo, los operadores lógicos <code>!</code> , <code>//</code> y <code>&&</code>
+            </div>
+            <div class="info">El contenido de los bloques de código (bucles, funciones, clases, etc.) es delimitado mediante espacios o tabuladores, conocidos como indentación, antes de cada línea de órdenes pertenecientes al bloque. Python se diferencia así de otros lenguajes de programación que mantienen como costumbre declarar los bloques mediante un conjunto de caracteres, normalmente entre llaves {}. Se pueden utilizar tanto espacios como tabuladores para sangrar el código, pero se recomienda no mezclarlos.</div>
+            <div class="info">Función factorial en C (sangría opcional)</div>
+            <div class="info">
+<pre>
+<code>
+    int factorial(int x)
+{
+    if (x < 0 || x % 1 != 0) {
+        printf("x debe ser un numero entero mayor o igual a 0");
+        return -1; //Error
+    }
+    if (x == 0) {
+        return 1;
+    }
+    return x * factorial(x - 1);
+}
+</code>
+</pre>
+            </div>
+            <div class="info">
+                Función factorial en Python (sangría obligatoria)
+            </div>
+            <div class="info">
+                <pre>
+<code>
+    def factorial(x):
+    assert x >= 0 and x % 1 == 0, "x debe ser un entero mayor o igual a 0."
+    if x == 0:
+        return 1
+    else:
+        return x * factorial(x - 1)
+</code>
+                </pre>
+            </div>
+        </section>
+
+        <!--Hola Mundo-->
+        <section class="main-section">
+            <div class="title-info"><h1>¡Hola Mundo!</h1></div>
+            <div class="info">En informática, un programa Hola Mundo es el que imprime el texto «¡Hola, Mundo!» en un dispositivo de visualización, en la mayoría de los casos una pantalla de monitor. Este programa suele ser usado como introducción al estudio de un lenguaje de programación, siendo un primer ejercicio típico, y se lo considera fundamental desde el punto de vista didáctico.</div>
+            <div class="info">El Hola Mundo se caracteriza por su sencillez, especialmente cuando se ejecuta en una interfaz de línea de comandos. En interfaces gráficas la creación de este programa requiere de más pasos.</div>
+            <div class="info">El programa Hola Mundo también puede ser útil como prueba de configuración para asegurar que el compilador, el entorno de desarrollo y el entorno de ejecución estén instalados correctamente y funcionando.</div>
+            <div class="info">Programa ¡Hola, Mundo! en diversas versiones de Python:
+                <br>
+                <br>
+                <h3>Python 2.x:</h3>
+                <br>
+                <pre><code>print "Hola Mundo"</code></pre>
+                <br>
+                <br>
+                <h3>Python 3.x:</h3>
+                <br>
+                <pre><code>print("Hola Mundo");</code></pre>
+            </div>
+            
+            <div class="info"></div>
+            <div class="info"></div>
+        </section>
+
+        <!--Variables-->
+        <section class="main-section">
+            <div class="title-info"><h1>Variables</h1></div>
+            <div class="info">Es un nombre que se refiere a un objeto que reside en la memoria. El objeto puede ser de alguno de los tipos vistos (número o cadena de texto), o alguno de los otros tipos existentes en Python.</div>
+            <div class="info"></div>
+            <div class="info"></div>
+            <div class="info"></div>
+            <div class="info"></div>
+        </section>
+
+        <!--Declarar Variables-->
+        <section class="main-section">
+            <div class="title-info"><h1></h1></div>
+            <div class="info"></div>
         </section>
     </main>
 </body>
