@@ -24,20 +24,30 @@ main{
   min-width:700px;
   display: block;
 }
+
 #header-cel{
+  position: absolute;
   display: none;
   background-color: #306998;
   color: #fff;
   padding: 20px;
   width: 100%;
-  position: fixed;
+  position: relative;
   border: 1px solid #488BBE;
   justify-content: center;
 }
-#menu-cel{
-  display:flex;
-  position: relative;
-  justify-content: left;
+#header-cel h1{
+  margin-left: 30px;
+}
+#menu-cel i{
+  display: block;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 999;
+  width: 90px;
+  font-size: 26px;
+  height: 60px;
 }
 
 .wrapper{
@@ -88,21 +98,28 @@ main{
      display: block;
      margin: auto;
      text-align:justify;
-     margin-left: 360px;
+     margin-left: 25%;
      width: 60%;
  }
 
- @media (max-width: 600px) {
+ @media (max-width: 1250px) {
     .main-section {
       margin: 0px 10px 0px 10px;
       align-items: center;
       width: 100%;
+    }
+    .info{
+      margin: 0 20px 0 20px;
     }
     .wrapper .sidebar{
       display: none;
     }
     #header-cel{
       display: flex;
+      position: fixed;
+    }
+    header{
+      margin-bottom: 100px;
     }
   }
 .title-info{
@@ -134,4 +151,56 @@ pre {
     code{
     color: #1b1b1b;
     font-size: 14px;
+}
+
+.menu{
+  position: absolute;
+  width: 100%;
+  border-radius:2px;
+  left: 0;
+  background-color:#488BBE;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 47px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  animation: closeMenu 300ms ease-in-out forwards;
+}
+details[open] .menu {
+  animation-name: menuAnim;
+}
+.menu a {
+  padding: 12px 24px;
+  margin: 0 16px;
+  color:#fff;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  text-align: center;
+  transition: filter 200ms linear 0s;
+}
+details::before {
+  color:#306998;
+  position: relative;
+  margin-left: 0px;
+  padding: 10px 10px;
+  opacity: 0.4;
+}
+details[open]::before {
+  animation: fadeMe 300ms linear forwards;
+}
+@keyframes menuAnim {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: calc(fit-content+10px);
+  }
+}
+@keyframes fadeMe {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
 }
