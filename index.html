@@ -11,7 +11,7 @@
 
 <body id="main-doc">
     <main>
-        <!--Header-->
+        <!--Header max-width 1290px-->
         <section>
             <header id="header-cel">
                 <div id="menu-cel"><details><summary><i class="fa-solid fa-bars"></i></summary>
@@ -31,6 +31,8 @@
                 <h1 class="title-cel">PYTHON <i class="fa-brands fa-python"></i></h1>
             </header>
         </section>
+
+        <!--Header min-width 1290px-->
         <section class="header-section">
             <header>
                 <div class="wrapper">
@@ -80,11 +82,11 @@
         <section class="main-section">
             <div class="title-info"><h1>Elementos</h1></div>
             <div class="info">Python está destinado a ser un lenguaje de fácil lectura. Su formato es visualmente ordenado y, a menudo, usa palabras clave en inglés donde otros idiomas usan puntuación. A diferencia de muchos otros lenguajes, no utiliza corchetes para delimitar bloques y se permiten puntos y coma después de las declaraciones, pero rara vez, si es que alguna vez, se utilizan. Tiene menos excepciones sintácticas y casos especiales que C o Pascal.</div>
-            <div class="info">Diseñado para ser leído con facilidad, una de sus características es el uso de palabras donde otros lenguajes utilizarían símbolos. Por ejemplo, los operadores lógicos <code>!</code> , <code>//</code> y <code>&&</code>
+            <div class="info">Diseñado para ser leído con facilidad, una de sus características es el uso de palabras donde otros lenguajes utilizarían símbolos. Por ejemplo, los operadores lógicos <code class="text-code">!</code> , <code class="text-code">//</code> y <code class="text-code">&&</code>
             </div>
             <div class="info">El contenido de los bloques de código (bucles, funciones, clases, etc.) es delimitado mediante espacios o tabuladores, conocidos como indentación, antes de cada línea de órdenes pertenecientes al bloque. Python se diferencia así de otros lenguajes de programación que mantienen como costumbre declarar los bloques mediante un conjunto de caracteres, normalmente entre llaves {}. Se pueden utilizar tanto espacios como tabuladores para sangrar el código, pero se recomienda no mezclarlos.</div>
-            <div class="info">Función factorial en C (sangría opcional)</div>
-            <div class="info">
+            <div class="info"><h4>Función factorial en C (sangría opcional)</h4></div>
+            <div class="info-code">
 <pre>
 <code>
     int factorial(int x)
@@ -102,9 +104,9 @@
 </pre>
             </div>
             <div class="info">
-                Función factorial en Python (sangría obligatoria)
+                <h4>Función factorial en Python (sangría obligatoria)</h4>
             </div>
-            <div class="info">
+            <div class="info-code">
                 <pre>
 <code>
     def factorial(x):
@@ -145,15 +147,37 @@
         <section class="main-section">
             <div class="title-info"><h1>Variables</h1></div>
             <div class="info">Es un nombre que se refiere a un objeto que reside en la memoria. El objeto puede ser de alguno de los tipos vistos (número o cadena de texto), o alguno de los otros tipos existentes en Python.</div>
-            <div class="info"></div>
-            <div class="info"></div>
-            <div class="info"></div>
+
+            <div class="info">Las variables se definen de forma dinámica, lo que significa que no se tiene que especificar cuál es su tipo de antemano y puede tomar distintos valores en otro momento, incluso de un tipo diferente al que tenía previamente. Se usa el símbolo <code class="text-code">=</code> para asignar valores.</div>
+
+            <div class="info">Como es lógico y, para evitar confusiones, el nombre de la variable no puede coincidir con los nombres de los «comandos» de python (if, for, etc.). Tampoco podremos usar nombres de variables con tildes o con ñ.</div>
+            <div class="info">¿Y por qué hay que decir lo que se mete en cada variables? Porque en función de lo que haya dentro de ella, se podrán hacer una u otras cosas, como por ejemplo sumar dos números.</div>
             <div class="info"></div>
         </section>
 
         <!--Declarar Variables-->
         <section class="main-section">
-            <div class="title-info"><h1></h1></div>
+            <div class="title-info"><h1>Declarar variables</h1></div>
+            <div class="info"> Para asignar un valor (un dato) a una variable se utiliza el operador de asignación <code class="text-code">=</code></div>
+            <div class="info">En la operación de asignación se ven involucradas tres partes:
+                <br>
+                <br>
+                <ul>
+                    <li><span>&#9830;</span> El operador de asignación <code class="text-code">=</code></li>
+
+                    <li><span>&#9830;</span> Un identificador o nombre de variable, a la izquierda del operador <code class="text-code">=</code></li>
+                    
+                    <li><span>&#9830;</span> Un una expresión, una llamada a una función o una combinación de todos ellos a la derecha del operador de asignación<code class="text-code">=</code></li>
+
+                </ul>
+            </div>
+            <div class="info">Cuando asignamos un valor a una variable por primera vez, se dice que en ese lugar se define e inicializa la variable. En un script o programa escrito en Python, podemos definir variables en cualquier lugar del mismo. Sin embargo, es una buena práctica definir las variables que vayamos a utilizar al principio.</div>
+            <div class="info">Para modificar el valor de una variable en Python, basta con asignarle un nuevo valor en cualquier momento y lugar después de la definición.</div>
+            <br>
+            <div class="info"><h4>Literales</h4></div>
+            <div class="info">Una variable se le puede asignar un literal, una expresión, una llamada a una función o una combinación de todos ellos.</div>
+            <div class="info"> Un literal no es más que un dato en crudo que se puede asignar directamente a una variable o formar parte de una expresión.</div>
+            <div class="info"></div>
             <div class="info"></div>
         </section>
     </main>

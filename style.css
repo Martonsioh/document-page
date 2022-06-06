@@ -135,13 +135,18 @@ main{
     color: #717171;
     letter-spacing: 1px;
 }
+.info h4{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
 
 pre {
     background-color: #ececec;
     border: 1px solid #999;
     border-radius: 10px;
     display: block;
-    width: 500px;
+    width: 800px;
     padding: 10px;
     padding-left:20px ;
     margin: 0 0 0 30px;
@@ -152,13 +157,37 @@ pre {
     color: #1b1b1b;
     font-size: 14px;
 }
+.info-code{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+.text-code{
+  background-color: #fff;
+  padding: 2px 5px;
+  border-radius: 2px;
+  border: 1px solid #23232328;
+}
+.info ul li{
+  padding: 4px;
+  margin-top: 6px;
+  width: 800px;
+  text-align: justify;
+}
 
+.info span{
+  background-color:rgb(255, 255, 255);
+  padding: 4px;
+  margin: 4px;
+  text-align: center;
+  border-radius: 100%;
+}
 .menu{
   position: absolute;
   width: 100%;
   border-radius:2px;
   left: 0;
-  background-color:#488BBE;
+  background-color:#488bbe;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
   margin-top: 47px;
   display: flex;
