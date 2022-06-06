@@ -104,7 +104,6 @@ main{
 
  @media (max-width: 1250px) {
     .main-section {
-      margin: 0px 10px 0px 10px;
       align-items: center;
       width: 100%;
     }
@@ -146,7 +145,7 @@ pre {
     border: 1px solid #999;
     border-radius: 10px;
     display: block;
-    width: 800px;
+    width: 80%;
     padding: 10px;
     padding-left:20px ;
     margin: 0 0 0 30px;
