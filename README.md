@@ -33,5 +33,5 @@
   
 ## <p align="center">¿Puedo ver la página? 🤔<p>
 
-<p align="center">Claro que puedes aunque si buscas un link directo o algo por el estilo es mejor que sepas que esta página solo tiene como unica finalidad ser presentada para un proyecto/practica sobre el desarrollo web responsive, por lo que no esta en mis planes hostearla en ninguna parte.<p>
+<p align="justify">Claro, aunque si buscas un link directo o algo por el estilo es mejor que sepas que esta página solo tiene como unica finalidad ser presentada para un proyecto/practica sobre el desarrollo web responsive, por lo que no esta en mis planes hostearla en ninguna parte.<p>
   
